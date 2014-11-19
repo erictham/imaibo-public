@@ -1,0 +1,56 @@
+{
+  "current-security-price": "",
+  "current-security-price-change-abs": "",
+  "current-security-price-change-rel": "",
+  "current-sentiment-price": "",
+  "current-sentiment-price-change-abs": "",
+  "current-sentiment-price-change-rel": "",
+  "current-sentiment-momentum": "",
+  "short-term-forecast": "",
+  // 144 days
+  "daily": {
+    "sentiment-data": [
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"}
+      // ...
+    ],
+    "security-data": [
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"}
+      // ...
+    ],
+    "RSI": [
+      // ...
+    ],
+    "MACD": [
+      // ...
+    ]
+  },
+  // Intraday
+  "intraday": {
+    "sentiment-data": [
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"},
+      {"price": "86.29", "change": "2.20", "timestamp": "3109702342"}
+      // ...
+    ],
+    "security-data": [
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"},
+      {"close": "324.50", "high": "330.20", "low": "310.20", "open": "320.10", "volume": "310970", "timestamp": "3109702342"}
+      // ...
+    ],
+    "RSI": [
+      // ...
+    ],
+    "MACD": [
+      // ...
+    ]
+  }
+}
