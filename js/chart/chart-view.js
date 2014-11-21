@@ -1,4 +1,4 @@
-var ContentModule = {
+var ChartView = {
   el: $('#content'),
   states: {
     chartView: {

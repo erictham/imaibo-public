@@ -36,9 +36,44 @@
 
 </head>
 <body>
-  <!-- Content panel start -->
-  <div id="content" class="col-md-9">
+  <!-- Right panel start -->
+  <div id="right-panel">
+    <ul class="nav nav-tabs nav-tabs-full-width">
+      <li><a class="link-choose-stock-view" href="#">自选股</a></li>
+      <li><a class="link-experts-view" href="#">专家解读</a></li>
+      <li><a class="link-news-view" href="#">新闻</a></li>
+      <li class="close-button pull-right"><a class="link-right-panel-collapsed" href="#"></a></li>
+      <li class="pin-button pull-right"><a href="#"></a></li>
+    </ul>
 
+    <!-- Choose stock view start -->
+    <div id="choose-stock-view" class="component">自选股</div>
+    <!-- Choose stock view end -->
+
+    <!-- Experts view start -->
+    <div id="experts-view" class="component">专家解读</div>
+    <!-- Experts view end -->
+
+    <!-- News view start -->
+    <div id="news-view" class="component">新闻</div>
+    <!-- News view end -->
+
+    <div class="collapse-button"></div>
+  </div>
+  <!-- Right panel end -->
+
+  <!-- Right panel collapsed start -->
+  <div id="right-panel-collapsed" class="collapsed">
+    <ul class="nav nav-tabs nav-tabs-collapsed">
+      <li><a class="link-choose-stock-view" href="#">自选股</a></li>
+      <li><a class="link-experts-view" href="#">专家解读</a></li>
+      <li><a class="link-news-view" href="#">新闻</a></li>
+    </ul>
+  </div>
+  <!-- Right panel collapsed end -->
+
+  <!-- Content panel start -->
+  <div id="content">
     <ul class="nav nav-tabs">
       <li><a class="link-chart-view active" href="#">心情指数</a></li>
       <li><a class="link-about-index-view" href="#">什么是心情指数</a></li>
@@ -89,32 +124,6 @@
     <!-- About index view end -->
   </div>
   <!-- Content panel end -->
-
-  <!-- Right panel start -->
-  <div id="right_panel" class="col-md-3">
-    <ul class="nav nav-tabs nav-tabs-full-width">
-      <li><a class="link-choose-stock-view" href="#">自选股</a></li>
-      <li><a class="link-experts-view" href="#">专家解读</a></li>
-      <li><a class="link-news-view" href="#">新闻</a></li>
-      <li class="close-button pull-right"><a href="#">x</a></li>
-      <li class="pin-button pull-right"><a href="#">o</a></li>
-    </ul>
-    <div id="choose-stock-view" class="component">自选股</div>
-    <div id="experts-view" class="component">专家解读</div>
-    <div id="news-view" class="component">新闻</div>
-    <div class="collapse-button"></div>
-  </div>
-  <!-- Right panel end -->
-
-  <!-- Right panel collapsed start -->
-  <div id="right-panel-collapsed" class="col-md-3">
-    <ul class="nav nav-tabs nav-tabs-collapsed">
-      <li><a class="link-stock-view" href="#">自选股</a></li>
-      <li><a class="link-experts-view" href="#">专家解读</a></li>
-      <li><a class="link-news-view" href="#">新闻</a></li>
-    </ul>
-  </div>
-  <!-- Right panel collapsed end -->
 
   <script type="text/javascript" src="js/chart/chart-view.js"></script>
   <script type="text/javascript" src="js/chart/chart-module.js"></script>

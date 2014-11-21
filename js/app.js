@@ -1,4 +1,4 @@
 $(function(){
-  ContentModule.init();
+  ChartView.init();
   RightPanel.init();
 });

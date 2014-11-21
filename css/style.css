@@ -14,6 +14,7 @@ body {
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.no-right-padding { padding-right: 0px; }
 
 /* =Layout
 -------------------------------------------------------------- */
@@ -30,7 +31,7 @@ body {
   width: 150px;
 }
 .btn {
-  width: 180px;
+  width: 120px;
   height: 45px;
   color: #fff;
   line-height: 45px;
@@ -96,6 +97,28 @@ body {
 
 /* =Right Panel
 -------------------------------------------------------------- */
+#content {
+  overflow: hidden;
+  margin-right: 45px;
+  margin-left: 15px;
+
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+#right-panel.collapsed { margin-right: -280px; }
+#right-panel {
+  float: right;
+  width: 280px;
+  margin-left: 15px;
+
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
 .nav-tabs-full-width {
   border: 1px solid #4d4d4d;
   border-bottom: 0px;
@@ -104,9 +127,10 @@ body {
 .nav-tabs-full-width > li {
   margin-left: -1px;
   margin-top: -1px;
+  height: 42px;
 }
 .nav-tabs > li.pin-button, .nav-tabs > li.close-button {
-  width: 8%;
+  width: 10%;
   border-left: 0px;
   border-right: 0px;
 }
@@ -114,17 +138,46 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   border-right: 0px;
-  text-align: center;
+  background: url('../assets/chart/pin.png') no-repeat center center;
+  height: 42px;
 }
 .nav-tabs > li.pin-button > a:hover, .nav-tabs > li.close-button > a:hover {
   background-color: transparent;
 }
-
 .nav-tabs > li.close-button > a {
   padding-left: 0px;
   padding-right: 0px;
   border-left: 0px;
-  text-align: center;
+  background: url('../assets/chart/close.png') no-repeat center center;
+  height: 42px;
+}
+.nav-tabs > li.close-button > a.active {
+  border-bottom: 3px solid transparent;
+}
+
+#right-panel-collapsed {
+  position: absolute;
+  right: 0;
+  width: 30px;
+
+  -webkit-transition: all 500ms ease-out 300ms;
+  -moz-transition: all 500ms ease-out 300ms;
+  -o-transition: all 500ms ease-out 300ms;
+  transition: all 500ms ease-out 300ms;
+}
+#right-panel-collapsed.collapsed {
+  margin-right: -30px;
+}
+.nav-tabs-collapsed > li {
+  display: block;
+  float: none;
+}
+.nav-tabs-collapsed > li > a {
+  padding: 30px 10px;
+}
+.nav-tabs-collapsed > li > a.active, .nav-tabs-collapsed > li > a.active:hover {
+  border-bottom: 3px solid transparent;
+  color: rgb(107, 107, 107);
 }
 
 /* =SVG

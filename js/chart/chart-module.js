@@ -1,5 +1,5 @@
-var width = 900;
-var height = 500;
+var width = 600;
+var height = 300;
 
 String.prototype.format = function() {
   var formatted = this;

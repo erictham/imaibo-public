@@ -1,5 +1,10 @@
 var RightPanel = {
   el: $('#right-panel'),
+  collapsed: {
+    el: $('#right-panel-collapsed'),
+    link: $('.link-right-panel-collapsed'),
+  },
+  contentView: '',
   states: {
     chooseStockView: {
       el: $('#choose-stock-view'),
@@ -12,22 +17,35 @@ var RightPanel = {
     newsView: {
       el: $('#news-view'),
       link: $('.link-news-view')
-    },
-    rightPanelCollapsed: {
-      el: $('#right-panel-collapsed'),
-      link: $('.link-right-panel-collapsed')
     }
+  },
+  collapseView: function(){
+    this.el.addClass('collapsed');
+    this.collapsed.el.removeClass('collapsed');
+  },
+  expandView: function(){
+    this.el.removeClass('collapsed');
+    this.collapsed.el.addClass('collapsed');
   },
   init: function(){
     this.initLinks();
+    this.render();
+  },
+  render: function(){
     this.goTo('chooseStockView');
   },
   initLinks: function(){
     var self = this;
+
     _.each(this.states, function(state, name){
       state.link.on('click', function(){
+        self.expandView();
         self.goTo(name);
       });
+    });
+
+    this.collapsed.link.on('click', function(){
+      self.collapseView();
     });
   },
   goTo: function(toState){
